@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LMS.BookModule\LMS.BookModule.csproj" />
+    <ProjectReference Include="..\LMS.ReaderModule\LMS.ReaderModule.csproj" />
+    <ProjectReference Include="..\LMS.SystemModule\LMS.SystemModule.csproj" />
+  </ItemGroup>
+</Project>

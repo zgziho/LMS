@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.EFCore", "LMS.EFCore\LMS.EFCore.csproj", "{618A25BB-ABA8-44A9-A0BD-CA62BC718BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Service", "LMS.Service\LMS.Service.csproj", "{27CA417E-5D5D-4044-AC94-44E29BF8B17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Service.Interfaces", "LMS.Service.Interfaces\LMS.Service.Interfaces.csproj", "{6DA1F764-A026-453E-A466-FB7E0217C639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Desktop", "LMS.Desktop\LMS.Desktop.csproj", "{088FCE77-53C9-4557-8DC0-3176F4F25545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.SystemModule", "LMS.SystemModule\LMS.SystemModule.csproj", "{01136EEF-438A-4463-999E-A1DC5BCD0BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.BookModule", "LMS.BookModule\LMS.BookModule.csproj", "{4BA5470E-E7AC-4945-A8AA-E3977DFE49FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.ReaderModule", "LMS.ReaderModule\LMS.ReaderModule.csproj", "{B7113240-F1CF-4CB4-A301-0CA789D38403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{618A25BB-ABA8-44A9-A0BD-CA62BC718BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618A25BB-ABA8-44A9-A0BD-CA62BC718BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618A25BB-ABA8-44A9-A0BD-CA62BC718BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618A25BB-ABA8-44A9-A0BD-CA62BC718BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27CA417E-5D5D-4044-AC94-44E29BF8B17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CA417E-5D5D-4044-AC94-44E29BF8B17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CA417E-5D5D-4044-AC94-44E29BF8B17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CA417E-5D5D-4044-AC94-44E29BF8B17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA1F764-A026-453E-A466-FB7E0217C639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA1F764-A026-453E-A466-FB7E0217C639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA1F764-A026-453E-A466-FB7E0217C639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA1F764-A026-453E-A466-FB7E0217C639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088FCE77-53C9-4557-8DC0-3176F4F25545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088FCE77-53C9-4557-8DC0-3176F4F25545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088FCE77-53C9-4557-8DC0-3176F4F25545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088FCE77-53C9-4557-8DC0-3176F4F25545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01136EEF-438A-4463-999E-A1DC5BCD0BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01136EEF-438A-4463-999E-A1DC5BCD0BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01136EEF-438A-4463-999E-A1DC5BCD0BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01136EEF-438A-4463-999E-A1DC5BCD0BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA5470E-E7AC-4945-A8AA-E3977DFE49FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA5470E-E7AC-4945-A8AA-E3977DFE49FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA5470E-E7AC-4945-A8AA-E3977DFE49FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA5470E-E7AC-4945-A8AA-E3977DFE49FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7113240-F1CF-4CB4-A301-0CA789D38403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7113240-F1CF-4CB4-A301-0CA789D38403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7113240-F1CF-4CB4-A301-0CA789D38403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7113240-F1CF-4CB4-A301-0CA789D38403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA148773-10A2-4C17-84F6-0010ECEC1844}
+	EndGlobalSection
+EndGlobal
