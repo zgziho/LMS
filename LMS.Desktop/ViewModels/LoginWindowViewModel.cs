@@ -15,7 +15,7 @@ using System.Windows;
 
 namespace LMS.Desktop.ViewModels
 {
-    public class LoginWindowViewModels : BindableBase
+    public class LoginWindowViewModel : BindableBase
     {
         private IContainerProvider _containerProvider;
         private ILoginService _loginService;
@@ -23,7 +23,7 @@ namespace LMS.Desktop.ViewModels
         //定义一个登录的命令对象
         public DelegateCommand<Window> LoginCommand { get; set; }
 
-        public LoginWindowViewModels(ILoginService loginService, IContainerProvider containerProvider)
+        public LoginWindowViewModel(ILoginService loginService, IContainerProvider containerProvider)
         {
             _containerProvider = containerProvider;
             _loginService = loginService;
@@ -31,7 +31,7 @@ namespace LMS.Desktop.ViewModels
             LoginCommand = new DelegateCommand<Window>(LoginAction);
         }
 
-        public LoginWindowViewModels()
+        public LoginWindowViewModel()
         {
             //初始化命令
             LoginCommand = new DelegateCommand<Window>(LoginAction);

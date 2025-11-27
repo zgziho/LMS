@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LMS.SystemModule.Views
+namespace LMS.SystemModule.Views.Books
 {
     /// <summary>
-    /// Interaction logic for ViewA.xaml
+    /// QueryBookView.xaml 的交互逻辑
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class QueryBookView : UserControl
     {
-        public ViewA()
+        public QueryBookView()
         {
             InitializeComponent();
         }

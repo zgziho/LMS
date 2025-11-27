@@ -1,4 +1,5 @@
 ﻿using LMS.Desktop.ViewModels;
+using LMS.EFCore.Models;
 using Prism.Ioc;
 using System.Windows;
 
@@ -17,7 +18,8 @@ namespace LMS.Desktop.Views
             // 从容器中获取MinWindowViewModel对象
             Parameter = parameter;
             var vm = containerProvider.Resolve<MainWindowViewModel>();
-            vm.TypeParmeter = parameter;
+            //vm.TypeParmeter = parameter;
+            vm.TypeParmeter = new Manager();
             // 加载Moudule
             vm.LoadModule();
         }

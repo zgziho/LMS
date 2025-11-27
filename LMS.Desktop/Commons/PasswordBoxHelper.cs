@@ -30,12 +30,12 @@ namespace LMS.Desktop.Commons
         }
 
         public static readonly DependencyProperty AttachProperty =
-            DependencyProperty.RegisterAttached("Attach", typeof(string), typeof(PasswordBoxHelper),
-            new PropertyMetadata(new PropertyChangedCallback(OnAttachChanged)));
+            DependencyProperty.RegisterAttached("Attach", typeof(bool), typeof(PasswordBoxHelper),
+            new PropertyMetadata(false, new PropertyChangedCallback(OnAttachChanged)));
 
-        public static string GetAttach(DependencyObject d)
+        public static bool GetAttach(DependencyObject d)
         {
-            return (string)d.GetValue(AttachProperty);
+            return (bool)d.GetValue(AttachProperty);
         }
 
         public static void SetAttach(DependencyObject d, string value)

@@ -18,7 +18,7 @@ namespace LMS.Desktop
     {
         protected override Window CreateShell()
         {
-            return Container.Resolve<LoginWindow>();
+            return Container.Resolve<MainWindow>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -27,6 +27,7 @@ namespace LMS.Desktop
             containerRegistry.Register<LMSDbContext>();
             //注册Service到容器中
             containerRegistry.Register<ILoginService, LoginService>();
+            containerRegistry.Register<IBookService, BookService>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
@@ -35,6 +36,7 @@ namespace LMS.Desktop
             // 注册后在显示使用的时候生效
             Type sysType = typeof(SystemModuleModule);
             Type readerType = typeof(ReaderModuleModule);
+
             var sysModule = new ModuleInfo
             {
                 ModuleType = sysType.AssemblyQualifiedName,
