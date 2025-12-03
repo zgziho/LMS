@@ -1,6 +1,7 @@
 ﻿using LMS.SystemModule.Models;
 using LMS.SystemModule.Views.Books;
 using LMS.SystemModule.Views.Menus;
+using LMS.SystemModule.Views.Readers;
 using MaterialDesignThemes.Wpf;
 using Prism.Ioc;
 using Prism.Regions;
@@ -40,8 +41,8 @@ namespace LMS.SystemModule.Views
             var bookMainMenu = new MyMenuItem("图书管理", PackIconKind.SafeSquareOutline, bookSubMens);
 
             var readerSubMenus = new List<SubItem>();
-            readerSubMenus.Add(new SubItem("读者列表"));
-            readerSubMenus.Add(new SubItem("添加读者"));
+            readerSubMenus.Add(new SubItem("读者列表", _containerProvider.Resolve<ReaderListView>()));
+            readerSubMenus.Add(new SubItem("添加读者", _containerProvider.Resolve<AddReaderView>()));
             var readerMainMenu = new MyMenuItem("读者管理", PackIconKind.FiberNew, readerSubMenus);
 
             var borrowSubMenus = new List<SubItem>();

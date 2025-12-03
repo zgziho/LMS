@@ -11,10 +11,12 @@
         <materialDesign:PackIcon Kind="{Binding Path=Icon}" Width="15" Height="15" Margin="10 16" Foreground="White" />
         <ListBoxItem x:Name="ListViewItemMenu" Content="{Binding Path=Header}" Padding="37 14" FontSize="15" Foreground="White" />
         <Expander x:Name="ExpanderMenu"  Header="{Binding Path=Header}" IsExpanded="False" Width="210" HorizontalAlignment="Right" Background="{x:Null}" Foreground="White">
-            <ListView x:Name="ListViewMenu" Selector.SelectionChanged="ListViewMenu_SelectionChanged" ItemsSource="{Binding Path=SubItems}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView x:Name="ListViewMenu"  ItemsSource="{Binding Path=SubItems}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Path=Header}" Padding="20 5" />
+                        <TextBlock Width="200" Height="30"
+                                   PreviewMouseLeftButtonDown="TextBlock_PreviewMouseLeftButtonDown"
+                                   Tag="{Binding}" Text="{Binding Path=Header}" Padding="20 5" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

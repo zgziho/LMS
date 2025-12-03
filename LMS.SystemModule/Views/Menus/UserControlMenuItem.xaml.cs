@@ -40,14 +40,14 @@ namespace LMS.SystemModule.Views.Menus
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TextBlock_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var subItem = ((sender as ListView).SelectedItem as SubItem).View;
-            if (subItem != null)
+            var view = ((sender as TextBlock).Tag as SubItem).View;
+            if (view != null)
             {
                 //先清空区域内的视图，再注册新的视图
-                _regionManager.Regions["MangerContentRegion"].RemoveAll();
-                _regionManager.RegisterViewWithRegion("MangerContentRegion", subItem.GetType());
+                _regionManager.Regions["ManagerContentRegion"].RemoveAll();
+                _regionManager.RegisterViewWithRegion("ManagerContentRegion", view.GetType());
             }
         }
     }

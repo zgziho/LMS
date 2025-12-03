@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:prism="http://prismlibrary.com/"
-             prism:ViewModelLocator.AutoWireViewModel="True"
-             Width="900" Height="650">
+             prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -34,7 +33,7 @@
         </Grid>
         <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
             <!--菜单显示内容区域-->
-            <ContentControl prism:RegionManager.RegionName="MangerContentRegion" />
+            <ContentControl prism:RegionManager.RegionName="ManagerContentRegion" />
         </StackPanel>
     </Grid>
 </UserControl>

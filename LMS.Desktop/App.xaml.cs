@@ -1,9 +1,13 @@
-﻿using LMS.Desktop.Views;
+﻿using LMS.Controls;
+using LMS.Desktop.Views;
 using LMS.EFCore;
 using LMS.ReaderModule;
 using LMS.Service;
 using LMS.Service.Interfaces;
 using LMS.SystemModule;
+using LMS.SystemModule.ViewModels.Books;
+using LMS.SystemModule.Views.Books;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 using Prism.Ioc;
 using Prism.Modularity;
 using System;
@@ -28,6 +32,12 @@ namespace LMS.Desktop
             //注册Service到容器中
             containerRegistry.Register<ILoginService, LoginService>();
             containerRegistry.Register<IBookService, BookService>();
+            containerRegistry.Register<IReaderService, ReaderService>();
+
+            //注册对话框的视图
+            containerRegistry.RegisterDialog<UpdateBookView, UpdateBookViewModel>();
+            //注册对话框
+            containerRegistry.RegisterDialogWindow<DiaologWindow>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

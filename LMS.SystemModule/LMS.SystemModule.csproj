@@ -11,6 +11,7 @@
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\课程\LMS\20221030_040_图书管理系统之自定义分页控件+图书信息删除功能实现详解\源码\LMS\LMS.Controls\LMS.Controls.csproj" />
     <ProjectReference Include="..\LMS.Service\LMS.Service.csproj" />
   </ItemGroup>
   <ItemGroup>
